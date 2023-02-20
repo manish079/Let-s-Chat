@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9E9"
+    android:orientation="vertical"
+    tools:context=".activities.ChatProfileActivity">
+
+
+    <!--    <androidx.appcompat.widget.Toolbar>-->
+    <!--                android:id="@+id/toolbar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?attr/actionBarSize"-->
+    <!--                app:contentInsetStartWithNavigation="0dp"-->
+    <!--                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+    <!--                app:popupTheme="@style/Theme.AppCompat.Light">-->
+    <!--    -->
+    <!--    </androidx.appcompat.widget.Toolbar>-->
+    <!--    -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:elevation="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lyt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/colorWhite" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/image"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:src="@drawable/avtar"/>-->
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/toolbar_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/avtar"
+                app:civ_border_color="#FFFFFF" />
+        </LinearLayout>
+
+        <!--  main container-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp">
+
+            <TextView
+                android:id="@+id/toolbar_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manish Prajapat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#F5F5F5" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_chat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <Space-->
+<!--                    android:layout_width="18dp"-->
+<!--                    android:layout_height="?attr/actionBarSize" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="28dp"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:background="?selectableItemBackgroundBorderless"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:src="@drawable/ic_baseline_videocam_24"-->
+<!--                    app:tint="#FFFFFF" />-->
+
+<!--                <Space-->
+<!--                    android:layout_width="10dp"-->
+<!--                    android:layout_height="?attr/actionBarSize" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="28dp"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:background="?selectableItemBackgroundBorderless"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:src="@drawable/ic_baseline_call_24"-->
+<!--                    app:tint="#FFFFFF" />-->
+
+<!--            </LinearLayout>-->
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msg_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="#2196F3"
+            android:rotation="180" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_input_parent"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="6dp"
+        android:minHeight="46dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_input_card_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/item_mic_card_parent"
+            android:minHeight="46dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/item_attachment_icon_container"
+                    android:layout_toEndOf="@+id/item_emoji_icon_container"
+                    android:minHeight="50dp">
+
+                    <EditText
+                        android:id="@+id/item_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Type a message"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:scrollbars="vertical"
+                        android:textColorHint="#757C82"
+                        android:textSize="16sp">
+
+                    </EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_camera_icon_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/item_camera_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_camera_"
+                        app:tint="#757C82" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_attachment_icon_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_toStartOf="@+id/item_camera_icon_container">
+
+                    <ImageView
+                        android:id="@+id/item_attachment_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:contentDescription="TODO"
+                        android:focusable="true"
+                        android:src="@drawable/ic_baseline_attach_file_24"
+                        app:tint="#757C82" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_emoji_icon_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/item_emoji_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:contentDescription="TODO"
+                        android:focusable="true"
+                        android:src="@drawable/ic_baseline_emoji_emotions_24"
+                        app:tint="#757C82" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_mic_card_parent"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:id="@+id/item_mic_click_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/send_mic_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_mic_24" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

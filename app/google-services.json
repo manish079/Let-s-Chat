@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "196357816008",
+    "project_id": "let-s-message-dedcf",
+    "storage_bucket": "let-s-message-dedcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196357816008:android:23fe509b10860939572ffd",
+        "android_client_info": {
+          "package_name": "com.project.manishprajapat.letsmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196357816008-6au4i94k56b9f2o0shl5hvmeda25ge4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.manishprajapat.letsmessage",
+            "certificate_hash": "e76a9c228b9333bfb719c60cb43ac66aacadd590"
+          }
+        },
+        {
+          "client_id": "196357816008-8f9raanreh734fttv1n0a1op9h88eck3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCgUNRAYB2r0l7J6roHjWYQ7ZB814C2H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196357816008-8f9raanreh734fttv1n0a1op9h88eck3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

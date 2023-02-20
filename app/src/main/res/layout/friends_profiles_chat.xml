@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="3dp"
+            android:src="@drawable/user"
+            app:civ_border_color="#2196F3"
+           app:civ_border_width="2dp"
+            app:srcCompat="@drawable/sign_up" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+
+                android:fontFamily="@font/poppins_medium"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+                android:textColor="@color/black"
+                android:inputType="textCapCharacters"
+                />
+
+            <TextView
+                android:id="@+id/lastMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Last Message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+
+            android:orientation="vertical">
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/read_msg"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="4"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:padding="3dp"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_marginBottom="5dp"/>-->
+
+            <TextView
+                android:id="@+id/current_msg_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="normal"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:gravity="center_vertical|center"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
