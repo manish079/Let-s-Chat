@@ -30,32 +30,32 @@
 
 
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/menu"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#ADCEE8"
-        app:cnb_addBottomInset="false"
-        app:cnb_addLeftInset="false"
-        app:cnb_addRightInset="false"
-        app:cnb_addTopInset="false"
-        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-        app:cnb_animationDuration="175"
-        app:cnb_badgeColor="@color/teal_200"
-        app:cnb_iconSize="24dp"
+<!--    <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--        android:id="@+id/menu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="#ADCEE8"-->
+<!--        app:cnb_addBottomInset="false"-->
+<!--        app:cnb_addLeftInset="false"-->
+<!--        app:cnb_addRightInset="false"-->
+<!--        app:cnb_addTopInset="false"-->
+<!--        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"-->
+<!--        app:cnb_animationDuration="175"-->
+<!--        app:cnb_badgeColor="@color/teal_200"-->
+<!--        app:cnb_iconSize="24dp"-->
 
-        app:cnb_menuResource="@menu/bottom_menu"
-        app:cnb_orientationMode="horizontal"
-        app:cnb_radius="8dp"
-        android:layout_gravity="bottom"
-        app:cnb_textAppearance="@style/TextAppearance.AppCompat"
-        app:cnb_unselectedColor="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/parentDashboard"
-        app:layout_constraintVertical_bias="0.982" />
+<!--        app:cnb_menuResource="@menu/bottom_menu"-->
+<!--        app:cnb_orientationMode="horizontal"-->
+<!--        app:cnb_radius="8dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        app:cnb_textAppearance="@style/TextAppearance.AppCompat"-->
+<!--        app:cnb_unselectedColor="@color/blue"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/parentDashboard"-->
+<!--        app:layout_constraintVertical_bias="0.982" />-->
 
 
 

@@ -90,7 +90,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
 
 //        holder.imageView.setImageResource(model.getProfilePic());  //bcoz image set by glide library
-        holder.userName.setText(model.getName());
+            holder.userName.setText(model.getName());
 //        holder.lastMsg.setText(model.getIncomingMsg());
 //        holder.latestMsg.setText(model.getTime());
 
